@@ -20,12 +20,6 @@ public class PersonaController {
         model.addAttribute("list", personaServiceAPI.getAll());
         return "index";
     }
-    //APiVue
-    
-    @GetMapping("/all")
-    public List<Persona> getAll(){
-        return personaServiceAPI.getAll();
-    }
 
     //Actualizar
     @GetMapping("/save/{id}")
